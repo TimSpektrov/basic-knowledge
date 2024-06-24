@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Lugrasimo
+- Font Author: Copyright 2023 The Lugrasimo Project Authors (https://github.com/docrepair-fonts/lugrasimo-fonts).
+- Font Source: https://fonts.gstatic.com/s/lugrasimo/v4/qkBXXvoF_s_eT9c7Y7ae5JRLkAXbMQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

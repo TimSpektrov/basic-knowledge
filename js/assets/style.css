@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+body {
+    background-color: antiquewhite;
+    color: #41382d;
+}
+
+.container {
+    max-width: 1260px;
+    padding-inline: 30px;
+    margin-inline: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+section:nth-child(2n) {
+    color: antiquewhite;
+    background-color: #41382d;
+}
+
+.hero .container {
+    display: flex;
+}
+
+.avatar {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    border: 5px solid #e59e47;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.description {
+    line-height: 1.7;
+}
+.description:not(:last-child) {
+    margin-bottom: 1.7em;
+}
+.contacts__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.contacts__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    line-height: 1;
+}
+.contacts__link svg {
+    height: 1em;
+    width: 1em;
+}
+.contacts__link_mail svg {
+    fill: currentColor;
+}
+.contacts__link_phone svg {
+    stroke: currentColor;
+    fill: none;
+
+}
+@media screen and (max-width: 600px) {
+    .section .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hero .container {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 38px;
+    }
+    .avatar {
+        width: 100%;
+    }
+    .contacts__list {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 600px) {
+    .section .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .hero .container {
+        align-items: center;
+
+    }
+    .title {
+        font-size: 90px;
+    }
+    .avatar {
+        width: 50%;
+    }
+    .description {
+        text-align: justify;
+    }
+    .contacts__list {
+        justify-content: space-between;
+    }
+}
